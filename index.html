@@ -7,76 +7,67 @@
     <title>DND</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/p5.js"></script>
-
 </head>
 
 <body>
-    <header>
+    <header class="page-header">
         <h2>Dungeons and Dragons random character generator</h2>
     </header>
+
     <!-- Character sheet starts here -->
-    <div>
+    <div class="character-sheet">
+
         <!-- Character info -->
-        <div>
-            <!-- character name -->
-            <article id="name">Name: </article>
-            <!-- character race -->
-            <article id="race">Race: </article>
-            <!-- character class -->
-            <article id="class">Class: </article>
+        <div class="character-info">
+            <article id="name" class="info-item">Name: </article>
+            <article id="race" class="info-item">Race: </article>
+            <article id="class" class="info-item">Class: </article>
         </div>
-        <!-- stats -->
-        <div>
-            <!-- str -->
-            <article>
-                <!-- stat -->
-                <div id="strength">STR: 0</div>
-                <!-- modifier -->
-                <div id="STRmod">0</div>
+
+        <!-- Stats -->
+        <div class="stats">
+            <!-- Strength -->
+            <article class="stat-box">
+                <div id="strength" class="stat-value">STR: 0</div>
+                <div id="STRmod" class="stat-mod">0</div>
             </article>
-            <!-- dex -->
-            <article>
-                <!-- stat -->
-                <div id="dexterity">DEX: 0</div>
-                <!-- modifier -->
-                <div id="DEXmod">0</div>
+            <!-- dexterity -->
+            <article class="stat-box">
+                <div id="dexterity" class="stat-value">DEX: 0</div>
+                <div id="DEXmod" class="stat-mod">0</div>
             </article>
-            <!-- con -->
-            <article>
-                <!-- stat -->
-                <div id="constitution">CON: 0</div>
-                <!-- modifier -->
-                <div id="CONmod">0</div>
+            <!-- constitution -->
+            <article class="stat-box">
+                <div id="constitution" class="stat-value">CON: 0</div>
+                <div id="CONmod" class="stat-mod">0</div>
             </article>
-            <!-- int -->
-            <article>
-                <!-- stat -->
-                <div id="inteligence">INT: 0</div>
-                <!-- modifier -->
-                <div id="INTmod">0</div>
+            <!-- inteligence -->
+            <article class="stat-box">
+                <div id="inteligence" class="stat-value">INT: 0</div>
+                <div id="INTmod" class="stat-mod">0</div>
             </article>
-            <!-- wis -->
-            <article>
-                <!-- stat -->
-                <div id="wisdom">WIS: 0</div>
-                <!-- modifier -->
-                <div id="WISmod">0</div>
+            <!-- wisdom -->
+            <article class="stat-box">
+                <div id="wisdom" class="stat-value">WIS: 0</div>
+                <div id="WISmod" class="stat-mod">0</div>
             </article>
-            <!-- cha -->
-            <article>
-                <!-- stat -->
-                <div id="charisma">CHA: 0</div>
-                <!-- modifier -->
-                <div id="CHAmod"> 0</div>
+            <!-- charisma -->
+            <article class="stat-box">
+                <div id="charisma" class="stat-value">CHA: 0</div>
+                <div id="CHAmod" class="stat-mod">0</div>
             </article>
+
         </div>
     </div>
-    <button type="button" onclick="OnClickButton()">Roll Character</button>
 
+    <button type="button" class="roll-button" onclick="OnClickButton()">
+        Roll Character
+    </button>
 
-    <footer>
-
+    <footer class="page-footer">
+        Made by Niek and Hugo
     </footer>
+
     <script src="sketch.js"></script>
 </body>
 
